@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- === HEADER === -->
+<!-- Top navigation bar like Google Keep -->
+<header class="header">
+    <div class="header-content">
+        <div class="header-left">
+            <button class="menu-btn" aria-label="Menu">☰</button>
+            <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="Keep" class="logo">
+            <h1 class="app-title">Keep</h1>
+        </div>
+        <div class="header-right">
+            <button class="icon-btn" aria-label="Search">🔍</button>
+            <button class="icon-btn" aria-label="Settings">⚙️</button>
+        </div>
+    </div>
+</header>
+
+<!-- === MAIN CONTENT === -->
+<main class="main-content">
+
+    <!-- === NOTE INPUT SECTION === -->
+    <!-- Card-style input like Google Keep -->
+    <div class="input-card">
+        <label for="noteInput"></label><input
+                type="text"
+                id="noteInput"
+                placeholder="Take a note..."
+                autocomplete="off"
+        >
+        <div class="input-actions">
+            <button class="icon-btn" aria-label="Add image">🖼️</button>
+            <button class="icon-btn" aria-label="Add checklist">☑️</button>
+            <button id="addNoteBtn" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- === NOTES GRID CONTAINER === -->
+    <!-- Grid layout for notes like Google Keep -->
+    <div id="notesContainer" class="notes-grid">
+
+        <!-- === EXAMPLE NOTE STRUCTURE === -->
+        <!-- Each note follows this structure -->
+        <!--
+        <div class="note-card">
+            <div class="note-content">
+                <div class="note-text">This is an example note</div>
+            </div>
+            <div class="note-footer">
+                <button class="icon-btn edit-btn" aria-label="Edit">✏️</button>
+                <button class="icon-btn delete-btn" aria-label="Delete">🗑️</button>
+            </div>
+        </div>
+        -->
+
+        <!-- === EMPTY STATE === -->
+        <div class="empty-state">
+            <div class="empty-icon">💡</div>
+            <p>Notes you add appear here</p>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- === JAVASCRIPT === -->
+<script src="script.js"></script>
+</body>
+</html>
